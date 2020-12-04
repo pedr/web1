@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Atividade 2</title>
+  <style>
+    * {
+      font-size: 16px;
+    }
+
+    form {
+      margin: 8px;
+    }
+    
+    select {
+      padding: 4px;
+    }
+
+    input {
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <p>Form com método POST</p>
+  <form method="POST">
+    <input type="text">
+    <input type="submit" value="Enviar">
+  </form>
+
+  <p>Selecione um carro</p>
+  <form method="POST">
+    <select name="carros">
+      <option value="fusca">fusca</option>
+      <option value="opala">opala</option>
+      <option value="kombi">kombi</option>
+    </select>
+    <input type="submit" value="Enviar">
+  </form>
+
+  <p>Valor entre 0 e 10</p>
+  <form method="POST">
+    <input type="number" min="0" max="10">
+    <input type="submit" value="Enviar">
+  </form>
+
+  <p>Input com placeholder</p>
+  <form method="POST">
+    <!--
+      placeholder é um valor que podemos adicionar ao campo input
+      para tornar o formulário um pouco mais moderno
+      uma boa prática é incluir no placeholder
+      um valor de exemplo do valor esperado pelo input
+    -->
+    <input type="text" placeholder="Digite seu nome">
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>

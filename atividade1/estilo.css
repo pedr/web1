@@ -1,0 +1,10 @@
+
+/* deixa os elementos com o id intro em caixa alta */
+#intro {
+  text-transform: uppercase;
+}
+
+/* transforma o conteúdo com a classe main em azul */
+.main {
+  color: blue;
+}

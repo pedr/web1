@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>Atividade 4</title>
+  <style>
+    label {
+      font-weight: bold;
+    }
+
+    form {
+      padding: 8px;
+      border: 3px solid grey;
+    }
+    
+    select {
+      padding: 4px;
+    }
+
+    input {
+      padding: 4px;
+      margin: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Formulário</h2>
+
+  <form method="POST">
+
+    <label for="Nome">Nome:</label>
+    <input type="text" name="Nome" id="Nome" required>
+    <br>
+
+    <label for="Email">E-mail:</label>
+    <input type="email" name="Email" id="Email">
+    <br>
+
+    <label for="Telefone">Telefone:</label>
+    <input type="tel" pattern="[0-9]{2}[0-9]{5}-[0-9]{4}" name="Telefone" id="Telefone" placeholder="(12)34567-8910" required>
+    <br>
+
+    <label>Idade: </label>
+    <select name="carros">
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+    </select>
+    <br>
+
+    <label>Sexo:</label>
+    <br>
+    <label for="M">M</label>
+    <input type="radio" value="M" name="sexo" alt="M" id="M">
+    <label for="F">F</label>
+    <input type="radio" value="F" name="sexo" alt="F" id="F">
+    <br>
+
+    <label>Tipo do navegador utilizado:</label>
+    <br>
+    <label for="GoogleChrome">Google Chrome</label>
+    <input type="checkbox" value="GoogleChrome" name="navegador" alt="GoogleChrome" id="GoogleChrome">
+    <label for="InternetExplorer">InternetExplorer</label>
+    <input type="checkbox" value="Internet Explorer" name="navegador" alt="InternetExplorer" id="InternetExplorer">
+    <label for="Firefox">Firefox</label>
+    <input type="checkbox" value="Firefox" name="navegador" alt="Firefox" id="Firefox">
+    <label for="Safari">Safari</label>
+    <input type="checkbox" value="Safari" name="navegador" alt="Safari" id="Safari">
+    <label for="Outros">Outros</label>
+    <input type="checkbox" value="Outros" name="navegador" alt="Outros" id="Outros">
+    <br>
+
+    <label for="mensagem">Mensagem:</label>
+    <br>
+    <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem..." cols=60 rows=6>Digite aqui sua mensagem...
+    </textarea>
+    <br>
+
+    <input type="submit" value="Enviar">
+    <input type="button" value="Limpar">
+  </form>
+</body>
+</html>
